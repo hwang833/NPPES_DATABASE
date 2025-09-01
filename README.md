@@ -80,16 +80,10 @@ The Purpose of this project is to perform ETL (Extract, Transfer, and Load) from
 **The program also needs an info.json file for the database, copy the info_template.json to info.json and put in the information from your database.**
 
 ## Makefile
-The project uses a Makefile to simplify common operations. Here are the available commands:
-
-* `make check_packages` - Verifies all required dependencies are installed before running the program
-* `make test` - Run all tests once run is completed
-* `make clear_NPPES_data` - Clear Original_data directory once run is finished
-* `make clear_db` - Clear all tables and types from the current database
-* `make help` - Runs all commands for the make file
-* `make summary` - Creates a summary of the given database information
-* `make run` - Run the shell script NPPES_data_fetching.sh which performs ETL (Extract, Transfer, and Load)
-> Note: If you want this to be in a crontab type in this command `make clear_NPPES_data clear_db run`
+To see all available commands:
+```bash
+make help
+```
 
 ### Setting up a Postgres web application
 1. Add a virtual environment
