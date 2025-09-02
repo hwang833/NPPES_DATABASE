@@ -1,5 +1,6 @@
 #!/bin/bash
-cd "$HOME/NPPES" || exit 1
+
+cd "/home/rbrown/NPPES" || exit 1
 
 source ".venv/bin/activate"
 
